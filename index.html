@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電卓ちゃん</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="Main">
+  
+    <div class="CalcRoot">
+      <div class="Face">
+        😐
+      </div>
+      <input class="CalcInterface" type="text" id="result" disabled>
+
+      <div class="CalcLine">
+        <input class="CalcButtons" type="button" value="1" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="2" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="3" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="+" onclick="calAdd(this)">
+      </div>
+      <div class="CalcLine">
+        <input class="CalcButtons" type="button" value="4" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="5" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="6" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="-" onclick="calAdd(this)">
+      </div>
+      <div class="CalcLine">
+        <input class="CalcButtons" type="button" value="7" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="8" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="9" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="/" onclick="calAdd(this)">
+      </div>
+      <div class="CalcLine">
+        <input class="CalcButtons" type="button" value="0" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="." onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="*" onclick="calAdd(this)">
+        <input class="CalcButtons" type="button" value="=" onclick="calc()">
+      </div>
+      <div class="CalcLine">
+        <input class="CalcButtons" type="button" value="褒める" onclick="calMind(this)">
+        <input class="CalcButtons" type="button" value="叱る" onclick="calMind(this)">
+      </div>
+    </div>
+  </div>
+  <script src="calc.js"></script>
+</body>
+
+</html>
